@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Blog on Dung M. Dao</title>
-        <link>https://dungminhdao.github.io/categories/blog/</link>
-        <description>Recent content in Blog on Dung M. Dao</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>en-us</language><atom:link href="https://dungminhdao.github.io/categories/blog/index.xml" rel="self" type="application/rss+xml" />
-    </channel>
+  <channel>
+    <title>Blog on Dung Minh Dao</title>
+    <link>https://dungminhdao.github.io/categories/blog/</link>
+    <description>Recent content in Blog on Dung Minh Dao</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://dungminhdao.github.io/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
 </rss>
