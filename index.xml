@@ -6,7 +6,201 @@
         <description>Recent content on Dung Minh Dao</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 04 May 2022 21:55:37 +0700</lastBuildDate><atom:link href="https://dungminhdao.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 18 May 2022 08:59:52 +0700</lastBuildDate><atom:link href="https://dungminhdao.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Machine Learning Operation (MLOps) Courses Review</title>
+        <link>https://dungminhdao.github.io/p/mlops-courses-review/</link>
+        <pubDate>Wed, 18 May 2022 08:59:52 +0700</pubDate>
+        
+        <guid>https://dungminhdao.github.io/p/mlops-courses-review/</guid>
+        <description>&lt;img src="https://dungminhdao.github.io/p/mlops-courses-review/background.png" alt="Featured image of post Machine Learning Operation (MLOps) Courses Review" /&gt;&lt;p&gt;Hi. This is the first course review I&amp;rsquo;ve ever done on my blog, and today I will review the 2 series of courses on the same topic: Machine Learning Operations, or MLOps for short.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What to expect in this review&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;An overview of what these programs do and don&amp;rsquo;t provide&lt;/li&gt;
+&lt;li&gt;The topics that are focused in each series and technological stacks used&lt;/li&gt;
+&lt;li&gt;Methods of teaching, reviewing, and testing&lt;/li&gt;
+&lt;li&gt;My experience studying each of these programs: what I find interesting (and what need to be improved)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;What NOT to expect in my review&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Details on each of the topics (though I do provide some insights)&lt;/li&gt;
+&lt;li&gt;How to complete each projects and tests&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;why-should-you-care-about-mlops-it&#34;&gt;Why should you care about MLOps it?&lt;/h1&gt;
+&lt;p&gt;For most of beginners in Machine Learning or AI, it is a common practice to use notebooks and simple files to do experiments with readily available datasets, run and fine-tune a number of models. While this could be a good starting point for developing practical models, things are quite different in the production scenarios.&lt;/p&gt;
+&lt;p&gt;I will not list all of the cumbersome theoretical and practical issues here, as the readers can easily search for posts on the topic of MLOps, as well as find some insights on the problems that MLOps solves through the rest of my course review. However, here is a simple summary of some of the problems that MLOps can provide solutions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The real-world data are constantly changing, which needs investigation to take action&lt;/li&gt;
+&lt;li&gt;ML models need to be easy to run, fine-tune, and track to ensure good performances&lt;/li&gt;
+&lt;li&gt;The ML project code should be organized in a pipeline with tracked dependencies for reproducibility and fault tolerance&lt;/li&gt;
+&lt;li&gt;When put into production, model performance should be constantly monitored and retraining should be trigger when there is a significant performance downgrade&lt;/li&gt;
+&lt;li&gt;Model fairness, information securities,&amp;hellip; are also problems for MLOps to deal with&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 223; 
+			flex-basis: 535px&#34;
+	&gt;
+	&lt;a href=&#34;https://dungminhdao.github.io/p/mlops-courses-review/MlSystem.png&#34; data-size=&#34;919x412&#34;&gt;
+		&lt;img src=&#34;https://dungminhdao.github.io/p/mlops-courses-review/MlSystem.png&#34;
+			width=&#34;919&#34;
+			height=&#34;412&#34;
+			srcset=&#34;https://dungminhdao.github.io/p/mlops-courses-review/MlSystem_hu09b48d4dd31c44b21a9017300595384f_23009_480x0_resize_box_3.png 480w, https://dungminhdao.github.io/p/mlops-courses-review/MlSystem_hu09b48d4dd31c44b21a9017300595384f_23009_1024x0_resize_box_3.png 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;ML system in production&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;ML system in production&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;center&gt;&lt;b&gt;Figure 1&lt;/b&gt;: This is how production ML system looks like&lt;/center&gt;
+&lt;p&gt;You can see that in the end of the day, ML engineers have to work with many other stakeholders - software engineers, data engineers, DevOps, customers, and managers - to implement a successful MLOps project.&lt;/p&gt;
+&lt;h1 id=&#34;a-quick-summary-of-courses-and-their-providers&#34;&gt;A quick summary of courses and their providers&lt;/h1&gt;
+&lt;p&gt;This topic is pretty new, and there are multiple approaches to deal with it. I have experience studying 2 series of courses on the topic of MLOps. The providers of these 2 courses have great reputation in organizing online courses in the topic of Machine Learning. Although these 2 programs are designed for a 3 to 4 months period of studying, it is personally beneficial for me to study each of these program in 1 month (as I can fully focus on MLOps topics). Links for these programs can be found at &lt;a class=&#34;link&#34; href=&#34;#references&#34; &gt;the reference part&lt;/a&gt;. Let&amp;rsquo;s have an overview:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Coursera Machine Learning Engineering for Production (MLOps) Specialization&lt;/strong&gt;: Well, another specialization provided by DeepLearning.AI; and from the past experience with their famous ML courses, I had a great expectation that this would be an another wonderful journey. Coursera&amp;rsquo;s courses can be audited for free, or you can get a financial aid to study these courses at a reasonable price - and sometimes for free!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Udacity Nanodegree in Machine Learning DevOps Engineer&lt;/strong&gt;: the first Nanodegree program I have ever taken, and I study this course as a part of training in my company. For the regular students, you can take the courses with the price of as low (or high?) as $120. The price goes with benefit, of course: in return, you will get personalized assessment and suggestion for your project submissions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;coursera-mlops-specialization&#34;&gt;Coursera MLOps Specialization&lt;/h1&gt;
+&lt;p&gt;This is a series of 4 courses, the first course is an introduction, and each of the other 3 courses focus on a specific topic: Data Lifecycle, Modeling Pipelines, and Deploying in Production. &lt;strong&gt;TensorFlow Extended (TFX) platform&lt;/strong&gt; is used for for creating production ML pipelines; the pipelines&amp;rsquo; components are introduced throughout the last 3 courses. Besides, other libraries (&lt;code&gt;ml_metdata&lt;/code&gt;, &lt;code&gt;sklearn&lt;/code&gt;) and technological platform related to Tensorflow (such as Google Cloud Platform) are also frequently used. A basic familiarity with the Tensorflow library can help you in some scenarios.&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 169; 
+			flex-basis: 407px&#34;
+	&gt;
+	&lt;a href=&#34;https://dungminhdao.github.io/p/mlops-courses-review/TFX.png&#34; data-size=&#34;1760x1036&#34;&gt;
+		&lt;img src=&#34;https://dungminhdao.github.io/p/mlops-courses-review/TFX.png&#34;
+			width=&#34;1760&#34;
+			height=&#34;1036&#34;
+			srcset=&#34;https://dungminhdao.github.io/p/mlops-courses-review/TFX_hu4a10abbfb7469d04efd92a89b4ca8f1a_119576_480x0_resize_box_3.png 480w, https://dungminhdao.github.io/p/mlops-courses-review/TFX_hu4a10abbfb7469d04efd92a89b4ca8f1a_119576_1024x0_resize_box_3.png 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;TensorFlow Extended (TFX)&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;TensorFlow Extended (TFX)&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;center&gt;&lt;b&gt;Figure 2&lt;/b&gt;: TensorFlow Extended Pipeline for production ML&lt;/center&gt;
+&lt;p&gt;In every course, there is a series of videos introducing new concepts. After a few videos, small quizzes are provided to test how well you understand these concepts, and there are also hand-on labs for practical experiences. Each course final score is determined by a combination of some specific quizzes and hand-on labs score.&lt;/p&gt;
+&lt;h2 id=&#34;benefit-of-taking-this-program&#34;&gt;Benefit of taking this program&lt;/h2&gt;
+&lt;p&gt;This specialization introduce a lot of recent concept in Machine Learning and AI such as Semi-supervised learning, Neural Architecture Search (NAS), and Knowledge Distillation. I also find interesting recent techniques in handling data (feature transformation, feature selection) and working with models (quantization and pruning).&lt;/p&gt;
+&lt;p&gt;Using a common platform (TFX) for creating pipeline make the courses in this specialization well-connected and coherent. A wide range of tools revolves around Tensorflow, especially from Google Cloud Platform, also help me to explore the new tools to train and deploy models automatically.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Side notes&lt;/strong&gt;: There are some guides provided by &lt;strong&gt;Qwiklabs&lt;/strong&gt; that help learners gain familiarity with deploying ML models on Google Cloud Platform in this courses. I recommend checking out other courses from &lt;strong&gt;Qwiklabs&lt;/strong&gt; for basic understanding of the whole platform. Signing up for a &lt;strong&gt;Qwiklabs&lt;/strong&gt; account through Google and get into the first guide, you will receive 30-days of studying any courses for free. Check out the link: &lt;a class=&#34;link&#34; href=&#34;https://www.qwiklabs.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.qwiklabs.com/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 141; 
+			flex-basis: 339px&#34;
+	&gt;
+	&lt;a href=&#34;https://dungminhdao.github.io/p/mlops-courses-review/VertexAI.png&#34; data-size=&#34;2200x1554&#34;&gt;
+		&lt;img src=&#34;https://dungminhdao.github.io/p/mlops-courses-review/VertexAI.png&#34;
+			width=&#34;2200&#34;
+			height=&#34;1554&#34;
+			srcset=&#34;https://dungminhdao.github.io/p/mlops-courses-review/VertexAI_huc69181a8dfdd74eca5fe3f13ec43128c_513188_480x0_resize_box_3.png 480w, https://dungminhdao.github.io/p/mlops-courses-review/VertexAI_huc69181a8dfdd74eca5fe3f13ec43128c_513188_1024x0_resize_box_3.png 1024w&#34;
+			loading=&#34;lazy&#34;
+			&gt;
+	&lt;/a&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;center&gt;&lt;b&gt;Figure 3&lt;/b&gt;: Vertex AI on GCP for end-to-end ML workflow (Course 4)&lt;/center&gt;
+&lt;h2 id=&#34;drawback-or-things-that-this-program-needs-to-improve&#34;&gt;Drawback, or things that this program needs to improve&lt;/h2&gt;
+&lt;p&gt;Unfortunately, this program requires basic knowledge in Deep Learning (e.g. completion of the Deep Learning Specialization) for comprehension of the recent concepts mentioned above, so it&amp;rsquo;s quite difficult for learners with knowledge in just traditional Machine Learning algorithms to understand many parts in these courses.&lt;/p&gt;
+&lt;p&gt;Since the topic of the specialization is about MLOps, too much advanced or in-depth discussion on a specific state-of-the-art Machine Learning techniques can distract the learners from the main purpose.&lt;/p&gt;
+&lt;p&gt;The hand-on labs provided are great in the knowledge provided; however, there aren&amp;rsquo;t much room for creativity and most of the time, learners just have to follow the instruction provided in the description in the notebooks or the guidelines in external labs to complete the graded exercises. This has 2 main disadvantages:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It is difficult to remember the knowledge provided if you just follow the instructions and not doing something for yourself. The course can be quite tedious sometimes.&lt;/li&gt;
+&lt;li&gt;There are no project to complete for your own goods. Personally, I think that pushing projects you have done in the course to GitHub can help showing your ability and skill to recruiters a lot.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;udacity-ml-devops-nanodegree&#34;&gt;Udacity ML DevOps Nanodegree&lt;/h1&gt;
+&lt;p&gt;This Nanodegree is also divided into 4 courses.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The first course helps developing skills that are necessary for production models, includes clean code, version control, testing and logging.&lt;/li&gt;
+&lt;li&gt;The second course focuses on building a organized and reproducible end-to-end machine learning pipeline from scratch using MLFlow. Besides, experiments, codes and results are tracked using Github and Wandb (Weights and Biases)&lt;/li&gt;
+&lt;li&gt;The third course teaches students about model deployment. Data Version Control (DVC) is used for data and models, and CI/CD workflow is built with Github Actions and Heroku.&lt;/li&gt;
+&lt;li&gt;The final course is about automating all the stuffs mentioned above with DevOps process, including diagnose operational issues, as well as retraining and redeployment of models&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Videos are used for introducing new concepts to the learners in each course. After each concepts, there are questions and programming exercises (not counted toward the final course accomplishment) for students to reinforce their knowledge on the topic. Finally, after completing all the lessons, there is a final project for each course, which students have to complete and satisfy all the requirements in the rubric to get pass the project.&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 177; 
+			flex-basis: 426px&#34;
+	&gt;
+	&lt;a href=&#34;https://dungminhdao.github.io/p/mlops-courses-review/Wandb.png&#34; data-size=&#34;3840x2160&#34;&gt;
+		&lt;img src=&#34;https://dungminhdao.github.io/p/mlops-courses-review/Wandb.png&#34;
+			width=&#34;3840&#34;
+			height=&#34;2160&#34;
+			srcset=&#34;https://dungminhdao.github.io/p/mlops-courses-review/Wandb_hu345f21e14d72d063d4a8549e15f7819f_650713_480x0_resize_box_3.png 480w, https://dungminhdao.github.io/p/mlops-courses-review/Wandb_hu345f21e14d72d063d4a8549e15f7819f_650713_1024x0_resize_box_3.png 1024w&#34;
+			loading=&#34;lazy&#34;
+			&gt;
+	&lt;/a&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;center&gt;&lt;b&gt;Figure 4&lt;/b&gt;: Experiments and model tracking using Wandb (second project, my implementation)&lt;/center&gt;
+&lt;h2 id=&#34;benefit-of-taking-this-program-1&#34;&gt;Benefit of taking this program&lt;/h2&gt;
+&lt;p&gt;First of all, this Nanodegree doesn&amp;rsquo;t require you to have knowledge in Deep Learning; in fact, all the model used in the courses are simple traditional Machine Learning models. This is a great way to introduce MLOps concepts without going too much into other sophisticated methods specific to handling data or models.&lt;/p&gt;
+&lt;p&gt;There are also multiple technologies introduced in this program. However, compared to the Coursera&amp;rsquo;s technological stacks, the tools in this course are easier to learn and apply in practice. The deployment part using CI/CD is one of the most challenging but rewarding part that I have learned in doing the projects.&lt;/p&gt;
+&lt;p&gt;I find this Nanodegree&amp;rsquo;s projects very exciting to complete. There are many requirements in the rubrics, but it still create many rooms for my own creativity and improvements. Since not everything is provided readily like in the Coursera MLOps&amp;rsquo; hand-on labs, I have the experience of implementing from scratch for some parts of the project, which strengthen my ability to use the tools and reinforce my understanding of the concepts and the whole system.&lt;/p&gt;
+&lt;p&gt;Last but not least, the personalized assessment and suggestion for project submissions gives me lots of insight on how to improve my implementation and best practices in MLOps.&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 176; 
+			flex-basis: 424px&#34;
+	&gt;
+	&lt;a href=&#34;https://dungminhdao.github.io/p/mlops-courses-review/AttritionRiskAssesmentSystem.png&#34; data-size=&#34;1081x611&#34;&gt;
+		&lt;img src=&#34;https://dungminhdao.github.io/p/mlops-courses-review/AttritionRiskAssesmentSystem.png&#34;
+			width=&#34;1081&#34;
+			height=&#34;611&#34;
+			srcset=&#34;https://dungminhdao.github.io/p/mlops-courses-review/AttritionRiskAssesmentSystem_hudd3d2084a29b467c09e8e93093a72320_74489_480x0_resize_box_3.png 480w, https://dungminhdao.github.io/p/mlops-courses-review/AttritionRiskAssesmentSystem_hudd3d2084a29b467c09e8e93093a72320_74489_1024x0_resize_box_3.png 1024w&#34;
+			loading=&#34;lazy&#34;
+			&gt;
+	&lt;/a&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;center&gt;&lt;b&gt;Figure 5&lt;/b&gt;: ML system that allows scheduled re-train, re-deploy, monitor, and report on the model (final project)&lt;/center&gt;
+&lt;h2 id=&#34;drawback-or-things-that-this-program-needs-to-improve-1&#34;&gt;Drawback, or things that this program needs to improve&lt;/h2&gt;
+&lt;p&gt;Compared to the DeepLearningAI&amp;rsquo;s specialization, this Nanodegree doesn&amp;rsquo;t have implementation of MLOps for Deep Learning models. This is a drawback, since the MLOps process benefit the most for that type of model - which require frequent training, fine-tuning, and deployment compared to traditional one.&lt;/p&gt;
+&lt;p&gt;There are trade-off in introducing a number of different libraries and focusing on a specific tools. From my point of view, the concepts are presented in an organized manner, but it can still be a challenge for other learners to keep track of all the technologies used.&lt;/p&gt;
+&lt;h1 id=&#34;summary-and-final-words&#34;&gt;Summary and final words&lt;/h1&gt;
+&lt;p&gt;I found the 2 courses to be very comprehensive and contain interesting materials. These knowledge from the 2 courses can supplement each other very well, and I recommend taking both of these courses if possible. But for further recommendation:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If you do not have experience with Deep Learning beforehand, or you want to study the concept of MLOps without focusing too much on advanced details, the Udacity Nanodegree program is definitely the better choice.&lt;/li&gt;
+&lt;li&gt;If you want to know the state-of-the-art techniques in AI - especially for Deep Learning models - and get used to the TensorFlow-related libraries and Google Cloud Platform, then the Coursera Specialization is the way to go.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;A special thanks to my mentor at FPT Software AI Center, Dr. Khuong Nguyen, for recommending me these courses. Studying these courses helps me a lot to become a better Data Scientest and AI Engineer/Researcher.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;There are some images in the post, some are mine, some are from the Internet, and it’s free to use as in the LICENSE below. But I always leave credit here to support authors, and so do you if you want to use content in my article.&lt;/p&gt;
+&lt;h1 id=&#34;references&#34;&gt;References&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Image sources:
+&lt;ul&gt;
+&lt;li&gt;Figure 1: &lt;a class=&#34;link&#34; href=&#34;https://developers.google.com/machine-learning/crash-course/production-ml-systems&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://developers.google.com/machine-learning/crash-course/production-ml-systems&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Figure 2: &lt;a class=&#34;link&#34; href=&#34;https://www.tensorflow.org/tfx/guide&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.tensorflow.org/tfx/guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Figure 3: &lt;a class=&#34;link&#34; href=&#34;https://cloud.google.com/blog/topics/developers-practitioners/use-vertex-pipelines-build-automl-classification-end-end-workflow&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://cloud.google.com/blog/topics/developers-practitioners/use-vertex-pipelines-build-automl-classification-end-end-workflow&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Reference courses:
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.coursera.org/specializations/machine-learning-engineering-for-production-mlops&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Coursera Machine Learning Engineering for Production (MLOps) Specialization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.udacity.com/course/machine-learning-dev-ops-engineer-nanodegree--nd0821&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Udacity Nanodegree in Machine Learning DevOps Engineer&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
         <title>Getting Used to GitHub, Eps. 3</title>
         <link>https://dungminhdao.github.io/p/getting-used-to-github-eps-3/</link>
         <pubDate>Wed, 04 May 2022 21:55:37 +0700</pubDate>

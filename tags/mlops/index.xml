@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mlops on Dung Minh Dao</title>
+    <link>https://dungminhdao.github.io/tags/mlops/</link>
+    <description>Recent content in mlops on Dung Minh Dao</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 18 May 2022 08:59:52 +0700</lastBuildDate><atom:link href="https://dungminhdao.github.io/tags/mlops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Machine Learning Operation (MLOps) Courses Review</title>
+      <link>https://dungminhdao.github.io/p/mlops-courses-review/</link>
+      <pubDate>Wed, 18 May 2022 08:59:52 +0700</pubDate>
+      
+      <guid>https://dungminhdao.github.io/p/mlops-courses-review/</guid>
+      <description>Hi. This is the first course review I&amp;rsquo;ve ever done on my blog, and today I will review the 2 series of courses on the same topic: Machine Learning Operations, or MLOps for short.
+What to expect in this review:
+ An overview of what these programs do and don&amp;rsquo;t provide The topics that are focused in each series and technological stacks used Methods of teaching, reviewing, and testing My experience studying each of these programs: what I find interesting (and what need to be improved)  What NOT to expect in my review:</description>
+    </item>
+    
+  </channel>
+</rss>
