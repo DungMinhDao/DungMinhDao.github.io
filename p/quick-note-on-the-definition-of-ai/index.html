@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='A perspective from Stanford&#39;s AI course - CS221'><title>Quick note on the definition of AI</title>
+
+<link rel='canonical' href='https://dungminhdao.github.io/p/quick-note-on-the-definition-of-ai/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='Quick note on the definition of AI'>
+<meta property='og:description' content='A perspective from Stanford&#39;s AI course - CS221'>
+<meta property='og:url' content='https://dungminhdao.github.io/p/quick-note-on-the-definition-of-ai/'>
+<meta property='og:site_name' content='Dung Minh Dao'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='course-review' /><meta property='article:tag' content='machine-learning' /><meta property='article:tag' content='stanford-ai' /><meta property='article:published_time' content='2022-05-25T20:13:33&#43;07:00'/><meta property='article:modified_time' content='2022-05-25T20:13:33&#43;07:00'/><meta property='og:image' content='https://dungminhdao.github.io/p/quick-note-on-the-definition-of-ai/Artificial-Intelligence.jpg' />
+<meta name="twitter:title" content="Quick note on the definition of AI">
+<meta name="twitter:description" content="A perspective from Stanford&#39;s AI course - CS221"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://dungminhdao.github.io/p/quick-note-on-the-definition-of-ai/Artificial-Intelligence.jpg' />
+    <link rel="shortcut icon" href="/img/logo.jpg" />
+
+    </head>
+    <body class="
+    article-page has-toc
+">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex 
+    
+        extended
+    
+">
+    
+        <div id="article-toolbar">
+            <a href="https://dungminhdao.github.io" class="back-home">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+                <span>Back</span>
+            </a>
+        </div>
+    
+<main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/quick-note-on-the-definition-of-ai/">
+                <img src="/p/quick-note-on-the-definition-of-ai/Artificial-Intelligence_hu9c1502da57918bcda1993849b624d87b_409576_800x0_resize_q75_box.jpg"
+                        srcset="/p/quick-note-on-the-definition-of-ai/Artificial-Intelligence_hu9c1502da57918bcda1993849b624d87b_409576_800x0_resize_q75_box.jpg 800w, /p/quick-note-on-the-definition-of-ai/Artificial-Intelligence_hu9c1502da57918bcda1993849b624d87b_409576_1600x0_resize_q75_box.jpg 1600w"
+                        width="800" 
+                        height="534" 
+                        loading="lazy"
+                        alt="Featured image of post Quick note on the definition of AI" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-tags">
+        
+            <a href="/tags/course-review/" >
+                course-review
+            </a>
+        
+            <a href="/tags/machine-learning/" >
+                machine-learning
+            </a>
+        
+            <a href="/tags/stanford-ai/" >
+                stanford-ai
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/p/quick-note-on-the-definition-of-ai/">Quick note on the definition of AI</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        A perspective from Stanford&#39;s AI course - CS221
+    </h3>
+    
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">May 25, 2022</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    6 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+</div>
+</header>
+
+    <section class="article-content">
+    <style>
+r { color: Red }
+bl { color: Blue }
+g { color: Green }
+</style>
+<p>As a final-year student who has some experience about artificial intelligence(AI) and machine learning (ML), it&rsquo;s great for me to have a chance to revisit the definition of AI through the introductory course to AI at Stanford University - CS221 - which content is available online. This is also a chance for me to look back at the Introduction to AI course that I studied in my second year at Hanoi University of Science and Technology (HUST).</p>
+<h1 id="what-is-aiml-for-me-before-this-course">What is AI/ML for me, before this course?</h1>
+<p>After many days of reading online content about the definition of AI in my early years at the university, I finally came up and satisfied with a definition of AI that seem to be general enough. In my own expression: <strong>&ldquo;Artificial Intelligence is any kind of simulation that exhibit a feature of intelligence&rdquo;</strong>. This definition, to me, is acceptable for a number of reasons:</p>
+<ul>
+<li>Some definitions equalize intelligence to human intelligence, which I believe is a limit to themselves. Animals exhibit some kinds of intelligence, and there can be types of intelligence that human don&rsquo;t have.</li>
+<li>Simulations are created by human in general, but the &ldquo;simulation&rdquo; here is meant to be equivalent to &ldquo;artificial&rdquo; - not occuring in the nature.</li>
+<li>There are many type of intelligence and abilities associate with intelligence - as from Wikipedia, abstraction, logic, understanding, learning, emotional knowledge, etc. - and there is also no single definition for intelligence. So exhibition of one those traits is acceptable.</li>
+</ul>
+<p>The definition of machine learning by Tom M. Mitchell in his book Machine Learning is commonly accepted by everyone:</p>
+<blockquote>
+<p>&ldquo;A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P if its performance at tasks in T, as measured by P, improves with experience E.&rdquo;</p>
+</blockquote>
+<p>ML is often regarded as a subset of AI. The difference here is, ML has an element called <strong>&ldquo;learning&rdquo;</strong> - improvement of performance with more data/experience</p>
+<h1 id="my-unanswered-questions">My unanswered questions</h1>
+<p>You might ask &ldquo;So what is the problem for you definition?&rdquo;. Actually, I know that I can have a good definition for my own. The next step is what make me interested in: <strong>&ldquo;How to categorize AI/ML in such a way that aligns well with some aspects of natural intelligence?&rdquo;</strong>. In fact, there are already some common ways of categorizing AI or ML:</p>
+<ul>
+<li>Grouping by learning methods: supervised learning, unsupervised learning, reinforcement learning,&hellip;</li>
+<li>Grouping by type of tasks: computer vision, natural language processing, speech processing,&hellip;</li>
+</ul>
+<p>While these groupings are useful, I&rsquo;m still not contented, since they are unnatural:</p>
+<ul>
+<li>The groupings just &ldquo;split&rdquo; problems in AI/ML into group according to human-defined concepts (e.g: supervised) or functionalities of human (e.g: see - computer vision, or speak - speech processing) - which <strong>ignores general aspects of intelligence (e.g: logic, abstraction) mentioned above</strong></li>
+<li>There is not much thing to compare between groups. <strong>There isn&rsquo;t seem to exist a scale from &ldquo;low&rdquo; to &ldquo;high&rdquo;</strong> to measure any aspect of each category in comparison with other categories</li>
+</ul>
+<h1 id="introduction-to-ai-course-at-my-university-and-my-doubt">Introduction to AI course at my university, and my doubt</h1>
+<p>These are topics that were mentioned in my AI class:</p>
+<ul>
+<li>Searching problems: tree methods (BFS, DFS), heuristic methods, constraint satisfaction problem (CSP)</li>
+<li>Logic: Propositional logic, First-order logic</li>
+<li>Machine learning: Some common methods (kNN, naive bayes, decision tree, neural network)</li>
+</ul>
+<p>Studying this course made me feel that there wass some kind of ordered categorization here. Maybe the difficulty of the problems is the scale that I&rsquo;m looking for? Or, the scale is based on how abstract the problems are?</p>
+<p>At the beginnning of the course, there was an introduction and overview of AI history. However, we students were not told why the course was structured in that way - we only knew the topics.</p>
+<h1 id="what-i-learned-and-deduced-from-stanfords-ai-course">What I learned and deduced from Stanford&rsquo;s AI course</h1>
+<p>First, from the view of this course&rsquo;s lecturer, there are 3 pillars to AI: Modeling (create a mathematical/logical representation of the real world), Inference (answer questions about models, e.g: shortest path, winning strategy), and Learning (transform an abstract model into a concrete one, with the help from additional data).</p>
+<p float="left">
+  <img src="modeling.png" style="width: 30%"/>
+  <img src="inference.png" style="width: 30%"/> 
+  <img src="learning.png" style="width: 35%"/>
+</p>
+<p>The below image pretty much sums up the categorization of AI/ML problem/model types used in this course. They are sorted by the &ldquo;low-high&rdquo; level of intelligence:</p>
+<ul>
+<li><strong>Reflex-based model</strong> is a <em>fixed sequence of computations</em> to get the output. This is equivalent to daily reflexive task that we can do very quickly, such as recognizing an object in the house</li>
+<li><strong>State-based model</strong> considers available <em>states</em> and <em>actions</em> at each state, as well as plan the step-by-step actions that will followed. This is the model of some of our favorite games such as chess and go, or some riddles for children like the prisoners&rsquo; dilemma</li>
+<li><strong>Variable-based model</strong> deals with assignment of <em>variable</em> with respect to some <em>factors/conditions</em>, regardless of order. Sudoku is a game that can be well-modelled in this category.</li>
+<li><strong>Logic-based model</strong> can digest heterogeneous information into some <em>syntax</em> and <em>semantic</em> representations, and reason deeply using <em>inference rules</em>. The common logical analysis we often do in daily life can be represented by this type of model.</li>
+</ul>
+<p><figure 
+	
+		class="gallery-image" 
+		style="
+			flex-grow: 340; 
+			flex-basis: 816px"
+	>
+	<a href="/p/quick-note-on-the-definition-of-ai/ML_types.png" data-size="2056x604">
+		<img src="/p/quick-note-on-the-definition-of-ai/ML_types.png"
+			width="2056"
+			height="604"
+			srcset="/p/quick-note-on-the-definition-of-ai/ML_types_hu55f7986c80c37abb145a579770ec7996_104753_480x0_resize_box_3.png 480w, /p/quick-note-on-the-definition-of-ai/ML_types_hu55f7986c80c37abb145a579770ec7996_104753_1024x0_resize_box_3.png 1024w"
+			loading="lazy"
+			>
+	</a>
+	
+</figure></p>
+<p><strong>So there is an ordered categorization here!!!</strong>. A great news for me. However, to make the ordering clearer, I read through the course and try to <strong>make some scales to organize the problems/models according to the 3 pillars mentioned above</strong>. Here is my own summary of analysis, based on what I learned from the course:</p>
+<table>
+<thead>
+<tr>
+<th>Pillar</th>
+<th>Reflex</th>
+<th>States</th>
+<th>Variables</th>
+<th>Logic</th>
+<th>Conclusion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><r><strong>Modeling</strong></r></td>
+<td>abstract model, &ldquo;massive lookup  table of best actions&rdquo;</td>
+<td>local interactions between  states (like in graph)</td>
+<td>solutions are assigned to  variables (lots of possibilities)</td>
+<td>syntax and semantics,  highly expressive</td>
+<td>Models get <strong>simpler</strong> and <strong>more expressive</strong>.  Moving from abstract → concrete (less learning)</td>
+</tr>
+<tr>
+<td><g><strong>Inference</strong></g></td>
+<td>follow a fixed sequence of  steps to get the output</td>
+<td>combine local interactions to  get optimization solutions</td>
+<td>find assignments to variables, or probabilistic inference</td>
+<td>draw (deep) logical reasoning from  knowledge, but rules can be deterministic</td>
+<td>Inference gets <strong>more complex</strong>,  and <strong>handles less uncertainty</strong></td>
+</tr>
+<tr>
+<td><bl><strong>Learning</strong></bl></td>
+<td>have to learn from (lots of) data</td>
+<td>get data through exploration  action</td>
+<td>need few data, incorporate prior  domain knowledge</td>
+<td>rule-based, don&rsquo;t allow fine-tuning  through data</td>
+<td>Learning gets <strong>easier</strong> - but <strong>lower ability  to fine-tune</strong> through additional data</td>
+</tr>
+</tbody>
+</table>
+<h1 id="conclusion">Conclusion</h1>
+<p>In the end, I have found what I need: an ordered grouping that &ldquo;aligns well with some aspects of natural intelligence&rdquo;. This categorization also fill in the hole of my understanding about how my university&rsquo;s Introduction to AI course was structured.</p>
+<p>Needless to say, there are many topics covered in this course. I think this is a very good course for anyone who want to get an overview of what AI is, and it can also be a starting point to find out more on specific topics of AI/ML.</p>
+<h1 id="reference">Reference</h1>
+<ul>
+<li>Background image: <a class="link" href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Artificial-Intelligence.jpg/1024px-Artificial-Intelligence.jpg"  target="_blank" rel="noopener"
+    >https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Artificial-Intelligence.jpg/1024px-Artificial-Intelligence.jpg</a></li>
+<li>CS221 - Spring 2022 lecture slides (and image references): <a class="link" href="https://stanford-cs221.github.io/spring2022/modules/"  target="_blank" rel="noopener"
+    >https://stanford-cs221.github.io/spring2022/modules/</a></li>
+<li>Intelligence - Wikipedia: <a class="link" href="https://en.wikipedia.org/wiki/Intelligence"  target="_blank" rel="noopener"
+    >https://en.wikipedia.org/wiki/Intelligence</a></li>
+</ul>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>MIT</span>
+    </section>
+    <section class="article-author">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+        <span>
+            Written with ❤️ by  Dung Minh Dao
+        </span>
+    </section></footer>
+
+
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">Related contents</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="has-image">
+    <a href="/p/mlops-courses-review/">
+        
+        
+            <div class="article-image">
+                <img src="/p/mlops-courses-review/background.b4d389dca60ef8089eb923c131937f0c_hua3fa854e8703697468290c79ed714f75_61588_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="mlops-courses-review" 
+                        data-hash="md5-tNOJ3KYO&#43;AieuSPBMZN/DA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Machine Learning Operation (MLOps) Courses Review</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+     
+     
+        
+    <div id="giscus" class="giscus-container">
+    <style>
+        .giscus-container {
+            background-color: var(--card-background);
+            border-radius: var(--card-border-radius);
+            box-shadow: var(--shadow-l1);
+            padding: var(--card-padding);
+        }
+    </style><script
+        src="https://giscus.app/client.js"
+        data-repo="DungMinhDao/DungMinhDao.github.io"
+        data-repo-id="R_kgDOHSRJfw"
+        data-category="General"
+        data-category-id="DIC_kwDOHSRJf84CO86H"
+        data-mapping="title"
+        data-reactions-enabled="1"
+        data-emit-metadata="1"
+        data-theme="light"
+        crossorigin="anonymous"
+        async
+    ></script>
+
+    <script>
+        function setGiscusTheme(theme) {
+            let giscus = document.querySelector('iframe.giscus-frame');
+            if (giscus) {
+                giscus.contentWindow.postMessage(
+                    { 
+                        giscus: {
+                            setConfig: { 
+                                theme: theme 
+                            }
+                        }
+                    },
+                    "https://giscus.app"
+                );
+            };
+        };
+
+        (function(){
+            addEventListener('message', (e) => {
+                if (event.origin !== 'https://giscus.app') return;
+                handler()
+            });
+            window.addEventListener('onColorSchemeChange', handler);
+
+            function handler() {
+                if (document.documentElement.dataset.scheme === "light") {
+                    setGiscusTheme('light');
+                } else {
+                    setGiscusTheme('dark_dimmed');
+                };
+            };
+        }());
+    </script></div>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2021 - 
+        
+        2022 Dung Minh Dao
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.2.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    
+        <aside class="sidebar right-sidebar sticky">
+            <section class="widget archives">
+                <div class="widget-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                </div>
+                <h2 class="widget-title section-title">Table of contents</h2>
+                
+                <div class="widget--toc">
+                    <nav id="TableOfContents">
+  <ol>
+    <li><a href="#what-is-aiml-for-me-before-this-course">What is AI/ML for me, before this course?</a></li>
+    <li><a href="#my-unanswered-questions">My unanswered questions</a></li>
+    <li><a href="#introduction-to-ai-course-at-my-university-and-my-doubt">Introduction to AI course at my university, and my doubt</a></li>
+    <li><a href="#what-i-learned-and-deduced-from-stanfords-ai-course">What I learned and deduced from Stanford&rsquo;s AI course</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+    <li><a href="#reference">Reference</a></li>
+  </ol>
+</nav>
+                </div>
+            </section>
+
+            <section class="widget archives">
+                
+  
+  
+  
+  <div class="widget-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-share" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <circle cx="6" cy="12" r="3"></circle>
+   <circle cx="18" cy="6" r="3"></circle>
+   <circle cx="18" cy="18" r="3"></circle>
+   <line x1="8.7" y1="10.7" x2="15.3" y2="7.3"></line>
+   <line x1="8.7" y1="13.3" x2="15.3" y2="16.7"></line>
+</svg>
+</div>
+<h2 class="widget-title section-title">Share</h2>
+  <section class="social-share">
+    <ul class="share-icons">
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?hashtags=codingnconcepts&amp;url=https%3a%2f%2fdungminhdao.github.io%2fp%2fquick-note-on-the-definition-of-ai%2f&amp;text=Quick%20note%20on%20the%20definition%20of%20AI" target="_blank" rel="noopener" title="Tweet me!" class="share-btn twitter">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"></path>
+</svg>
+          <p></p>
+          </a>
+      </li>
+      
+
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fdungminhdao.github.io%2fp%2fquick-note-on-the-definition-of-ai%2f" target="_blank" rel="noopener" title="Share me on Facebook!" class="share-btn facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
+</svg>
+          <p>Share me on Facebook!</p>
+          </a>
+      </li>
+      
+
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fdungminhdao.github.io%2fp%2fquick-note-on-the-definition-of-ai%2f&amp;source=https%3a%2f%2fdungminhdao.github.io%2fp%2fquick-note-on-the-definition-of-ai%2f&amp;title=Quick%20note%20on%20the%20definition%20of%20AI&amp;summary=Quick%20note%20on%20the%20definition%20of%20AI" target="_blank" rel="noopener" title="Share me on LinkedIn!" class="share-btn linkedin">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+   <line x1="8" y1="11" x2="8" y2="16"></line>
+   <line x1="8" y1="8" x2="8" y2="8.01"></line>
+   <line x1="12" y1="16" x2="12" y2="11"></line>
+   <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
+</svg>
+            <p>Share me on LinkedIn!</p>
+          </a>
+      </li>
+      
+
+      
+      
+      <li>
+        <a href="mailto:?subject=Dung%20Minh%20Dao - Quick%20note%20on%20the%20definition%20of%20AI.&amp;body=Quick%20note%20on%20the%20definition%20of%20AI%2c%20by%20Dung%20Minh%20Dao%0aA%20perspective%20from%20Stanford%27s%20AI%20course%20-%20CS221%0a%0ahttps%3a%2f%2fdungminhdao.github.io%2fp%2fquick-note-on-the-definition-of-ai%2f%0a" target="_blank" title="Send me via email!" class="share-btn email">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+   <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+   <polyline points="3 7 12 13 21 7"></polyline>
+</svg>
+          <p>Send me via Email!</p>
+        </a>
+      </li>
+    </ul>
+  </section>
+  
+            </section>
+        </aside>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
